@@ -61,9 +61,9 @@ for i in range(0, nt):
 		# print(t[i], r[j], x[i][j], E[i][j], p_drop[i][j])
 
 # save data to csv format
-np.savetxt("x-value.csv", np.row_stack(x), delimiter=",", fmt='%s')
-np.savetxt("E-value.csv", np.row_stack(E), delimiter=",", fmt='%s')
-np.savetxt("pressure_drop.csv", np.row_stack(p_drop), delimiter=",", fmt='%s')
+np.savetxt("tables/x-value.csv", np.row_stack(x), delimiter=",", fmt='%s')
+np.savetxt("tables/E-value.csv", np.row_stack(E), delimiter=",", fmt='%s')
+np.savetxt("tables/pressure_drop.csv", np.row_stack(p_drop), delimiter=",", fmt='%s')
 
 # plotting
 fig = plt.figure()
@@ -78,7 +78,7 @@ plt.xlabel('radius (ft)', fontsize=8)
 plt.ylabel('pressure (psia)', fontsize=8)
 
 ax1.legend()
-plt.savefig('normal.png')
+plt.savefig('graph/normal.png')
 # plt.show()
 
 # semilog plot
@@ -96,5 +96,5 @@ plt.ylabel('pressure (psia)', fontsize=8)
 
 ax2.legend()
 # plt.grid()
-plt.savefig('semilog.png')
+plt.savefig('graph/semilog.png')
 # plt.show()
