@@ -13,4 +13,4 @@ Matthew and Russell (referenced on Craft and Hawkins, 1991: 235) gave the soluti
 
 ![p (r, t) = p_i - \frac {70.6 q \mu B} {k h} \left\[-E_i \left(- \frac {\phi \mu c_t r^2}{0.00105 k t} \right) \right\]](https://render.githubusercontent.com/render/math?math=p%20(r%2C%20t)%20%3D%20p_i%20-%20%5Cfrac%20%7B70.6%20q%20%5Cmu%20B%7D%20%7Bk%20h%7D%20%5Cleft%5B-E_i%20%5Cleft(-%20%5Cfrac%20%7B%5Cphi%20%5Cmu%20c_t%20r%5E2%7D%7B0.00105%20k%20t%7D%20%5Cright)%20%5Cright%5D)
 
-where 
+where p<sub>i</sub> = initial pressure (psia), 
