@@ -26,5 +26,36 @@ where ![x = \frac {\phi \mu c_t r^2}{0.00105 k t}](https://render.githubusercont
 
 This program is used to calculate the pressure after got pressure drop based on this theorem with certain time and radius. This program uses **Python 3** with several libraries used: **matplotlib** for creating and showing graphs, **numpy** in this case for saving the calculation results in .csv format, **scipy** in this case for exponential integral function so that we don't need to make the E<sub>i</sub> algorithm, and **math** for the basic mathematical case such as power, exponential (e), trigonometric functions, etc.
 
+## Main program structure
+- `problem719-2.py`: main program
+- `graph` folder: stores the graphs in normal and semilog scale
+- `tables` display the calculation results of tables, including
+	- `x-value.csv`: shows x-value results
+	- `E-value.csv`: shows Ei-value results
+	- `pressure-drop.csv`: shows pressure results
+
+## Usage procedure
+In assumptions that we have Python installed,
+1. Download the program named "problem719-2.py". You can download this program by clicking that program's file name on this repository, then click "Raw", and "Ctrl + S" for saving the program.
+2. Download the "input.in" file. Steps for download the file are same as step 1 given. Put the file along with the "problem719-2.py" program.
+3. Create the folder named "graph" and "tables" beside the two files. These are useful for store the graph and table result
+4. You can modify the parameter value such as k or h values (or many values) by opening the program with text editor and modify the value.
+5. You can modify the time and radius input by clicking "input.in" in text editor and modify them like this.
+```py
+2		# amount of times, don't type this comment
+1		# value of time 1, don't type this comment
+10		# value of time 1, don't type this comment
+3		# amount of radius, don't type this comment
+1		# value of radius 1, don't type this comment
+5		# value of radius 2, don't type this comment
+10		# value of radius 3, don't type this comment
+```
+6. Run Terminal or Command Prompt
+7. Install Python libraries by typing `pip install matplotlib numpy scipy`
+8. Run the program by typing `python problem719-2.py < input.in` (Pyhton 2.7) or `python3 problem719-2.py < input.in` (Pyhton 3)
+
+## Output parameters
+The program will create x-value, Ei-value, and pressure result in .csv files named `x-value.csv`, `E-value.csv`, and `pressure-drop.csv` in `tables` folder and also graph pictures in .png files named `normal.png` and `semilog.png` in `graph` folder.
+
 ## Reference
 Craft, B. C., Murray F. Hawkins, and Ronald E. Terry. 1991. Applied petroleum reservoir engineering. Englewood Cliffs, N.J.: Prentice Hall.
