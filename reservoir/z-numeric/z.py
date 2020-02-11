@@ -25,8 +25,18 @@ def B(T, Tc, Pc, acc_factor):
 P = float(input("masukkan nilai tekanan P (dalam psia): "))		# pressure (psia)
 T = float(input("masukkan nilai temperatur T (dalam oR): "))	# temperature (oR)
 
+sum = 0																							# sum for normalization
+
 for i in range(len(chem_name)):
 	mol.append(float(input("masukkan nilai persen mol utk " + chem_name[i] + ": ")))
+	sum += mol[i]
+
+if (sum != 100):
+	print("HASIL NORMALISASI:")
+	for i in range(len(chem_name)):
+		mol[i] = round(mol[i] / sum * 100, 2)
+		print(chem_name[i] + ": " + str(mol[i]) + "%")	
+
 
 ## processing
 z = 1			# init'd z-factor
