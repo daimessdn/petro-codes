@@ -1,9 +1,7 @@
-from tkinter import Label
+from tkinter import *
 
-widget  = Label(None, text="hello, world!")
-widget.pack()
+window = Tk()
+window.geometry("300x300")
+window.title("welcome")
 
-widget = Label(None, text="hello again!")
-widget.pack()
-
-widget.mainloop()
+window.mainloop()
