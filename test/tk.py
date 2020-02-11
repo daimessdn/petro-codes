@@ -1,4 +1,4 @@
-from Tkinter import Label
+from tkinter import Label
 
 widget  = Label(None, text="hello, world!")
 
