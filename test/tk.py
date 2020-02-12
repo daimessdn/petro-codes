@@ -22,7 +22,9 @@ def demo1():
 	dobl = dob.get()
 	var1 = var.get()
 
-	print(f"your full name is {first} {last}")
+	print(f("your full name is {first} {last}"))
+	print(f("your age is {dobl}"))
+	print(f("your country is {var1}"))
 
 def demo2():
 	exit()
