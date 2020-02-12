@@ -17,7 +17,12 @@ dob = StringVar()
 var = StringVar()
 
 def demo1():
-	print("demo tkinter")
+	first = fn.get()
+	last = ln.get()
+	dobl = dob.get()
+	var1 = var.get()
+
+	print(f"your full name is {first} {last}")
 
 def demo2():
 	exit()
